@@ -1,0 +1,810 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>UI5con Belgium 2020</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<style>
+		.reveal {
+			font-size: 58px;
+		}
+
+		.reveal,
+		.reveal h1,
+		.reveal h2,
+		.reveal h3,
+		.reveal h4,
+		.reveal h5,
+		.reveal h6 {
+			font-family: Arial, Helvetica, sans-serif;
+			text-transform: none;
+		}
+
+		.ui5con-alignleft .slides section,
+		.ui5con-alignleft .slides section>section {
+			text-align: start;
+		}
+
+		.reveal code,
+		.reveal pre {
+			font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+		}
+
+		.ui5con-orange {
+			color: rgb(240, 171, 0);
+		}
+
+		.ui5con-title {
+			width: 48%;
+			text-align: start;
+			padding-left: 1%;
+			padding-top: 2%;
+			margin-left: 0;
+			font-size: 72px;
+			font-weight: bold;
+		}
+
+		.ui5con-speakertitle {
+			font-size: 30px;
+			text-align: start;
+			padding-left: 1%;
+			padding-top: 5%;
+		}
+
+		.ui5con-aligntop .ui5con-title {
+			padding-top: 20%;
+		}
+
+		.ui5con-logo {
+			width: 50%;
+			height: 100%;
+			position: absolute;
+			right: 2%;
+			top: 0;
+			background-image: url(images/UI5con.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+
+		.ui5con-aligntop .ui5con-logo {
+			top: 44%;
+		}
+
+		h2.ui5con-divider {
+			text-align: start;
+			font-size: 92px;
+			padding-left: 2%;
+		}
+
+		.ui5con-aligntop h2.ui5con-divider {
+			padding-top: 23%;
+		}
+
+		.ui5con-thankyou {
+			font-size: 120px;
+			font-weight: bold;
+			text-align: start;
+			padding-left: 2%;
+		}
+
+		.ui5con-aligntop .ui5con-thankyou {
+			padding-top: 12%;
+		}
+
+		.ui5con-speakerdetails {
+			font-size: 36px;
+			text-align: start;
+			padding-top: 5%;
+			padding-left: 2%;
+		}
+
+		.ui5con-sponsors .flexso {
+			width: 5%;
+			height: 5%;
+			position: absolute;
+			left: 1%;
+			bottom: 1%;
+			background-image: url(images/flexso_grey.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			z-index: 1;
+		}
+
+		.ui5con-sponsors .sap {
+			width: 5%;
+			height: 5%;
+			position: absolute;
+			right: 7%;
+			bottom: 1%;
+			background-image: url(images/sap.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			z-index: 1;
+		}
+
+		.flexso_white {
+			background-image: url(images/flexso_white.png) !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="ui5con-sponsors">
+			<div class="flexso"></div>
+			<div class="sap"></div>
+		</div>
+		<div class="slides">
+
+			<section data-background-color="#000">
+				<div class="ui5con-title ui5con-left">
+					<div>Get started with the UI5Tooling</div>
+					<div class="ui5con-orange"></div>
+				</div>
+
+				<div class="ui5con-logo"></div>
+
+				<div class="ui5con-speakertitle">
+					Wouter Lemaire, LemTech<br>
+					February 14, 2020
+				</div>
+			</section>
+			
+			<section>
+				<section data-background-color="#000">
+					<h2 class="ui5con-divider">Introduction</h2>
+				</section>
+				<section>
+					<h2>Who am I?</h2>
+					<p>Wouter Lemaire</p>
+					<p>Brussels</p>
+					<p>SAP Architect, Developer and Mentor</p>
+					<p>Specialized in UI5</p>
+					<p>Independent SAP Consultant</p>
+				</section>
+			</section>
+						
+			<section>
+				<section data-background-color="#000">
+					<h2 class="ui5con-divider">About <span class="ui5con-orange">UI5Tooling</span></h2>
+				</section>
+				<section>
+					<image src="images/tools.png"/>
+				</section>
+				<section>
+					<h2 class="ui5con-divider">UI5 <span class="ui5con-orange">Tooling</span></h2>
+					<image src="images/UI5.png"/>
+				</section>
+				<section>
+					<h3>Any IDE</h3>
+					<image src="images/sapwebide.png" width="200px"/>
+					<image src="images/eclipse.png" width="200px"/>
+					<image src="images/ws.png" width="200px"/>
+					<image src="images/vscode.png" width="200px"/>
+				</section>
+			</section>
+
+			<section>
+				<section data-background-color="#000">
+					<h2 class="ui5con-divider">Install <span class="ui5con-orange">UI5Tooling</span></h2>
+				</section>
+				<section>
+					<pre>
+						<code data-trim data-noescape>
+							npm install --global @ui5/cli
+						</code>
+					</pre>
+				</section>
+			</section>
+
+			<section>
+				<section data-background-color="#000">
+					<h2 class="ui5con-divider">Start <span class="ui5con-orange">UI5Tooling</span></h2>
+				</section>
+				<section>
+					<h3>Clone demo app</h3>
+					<pre>
+							<code data-trim data-noescape>
+								https://github.com/lemaiwo/UI5Con2019.git
+							</code>
+						</pre>
+				</section>
+				<section>
+					<h3>Delete Grunt</h3>
+				</section>
+				<section>
+					<h3>UI5 Init</h3>
+					<pre>
+							<code data-trim data-noescape>
+								UI5 init
+							</code>
+						</pre>
+				</section>
+			</section>
+
+			<section>
+				<section data-background-color="#000">
+					<h2 class="ui5con-divider">Run <span class="ui5con-orange">UI5Tooling</span></h2>
+				</section>
+				<section>
+					<h3>Run your app</h3>
+					<pre>
+							<code data-trim data-noescape>
+								UI5 serve
+							</code>
+						</pre>
+				</section>
+				<section>
+					<h3>UI5 SDK Resources</h3>
+					Online SDK
+					<pre>
+						<code data-trim data-noescape>
+							https://ui5.sap.com/
+						</code>
+					</pre>
+					Locally install SDK
+					<pre>
+						<code data-trim data-noescape>
+							npm install @openui5/sap.ui.core @openui5/themelib_sap_belize @openui5/sap.f @openui5/sap.m
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Proxy</h3>
+					Create Middleware extension: lib/middleware/odataProxy.js
+					<pre>
+						<code data-trim data-noescape>
+							module.exports = function ({
+								resources,
+								options
+							}) {
+								return function (req, res, next) {
+									console.log(req.method + ': ' + req.url);
+								}
+							};
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Proxy UI5 Config</h3>
+					<pre>
+						<code data-trim data-noescape>
+							server:
+							customMiddleware:
+								- name: odataProxy
+								beforeMiddleware: serveResources
+							---
+							specVersion: "1.0"
+							kind: extension
+							type: server-middleware
+							metadata:
+							name: odataProxy
+							middleware:
+							path: lib/middleware/odataProxy.js
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Proxy load Config</h3>
+					<pre>
+						<code data-trim data-noescape>
+							const fs = require('fs');
+							const httpProxy = require('http-proxy');
+							const proxy = new httpProxy.createProxyServer();
+							const odata = fs.readFileSync('./odata.json');
+							const routing = JSON.parse(odata);
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Proxy Access Control</h3>
+					<pre>
+						<code data-trim data-noescape>
+							res.header('Access-Control-Allow-Origin', '*');
+							res.header('Access-Control-Allow-Credentials', 'true');
+							res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+							res.header('Access-Control-Allow-Headers', 'X-Requested-With, Accept, Origin, Referer, User-Agent, Content-Type, Authorization, X-Mindflash-SessionID');
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Proxy Intercept OPTIONS method</h3>
+					<pre>
+						<code data-trim data-noescape>
+							if ('OPTIONS' === req.method) {
+								res.header(200);
+								console.log(req.method + '(options): ' + req.url);
+								next();
+								return;
+							}
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Proxy App Requests</h3>
+					<pre>
+						<code data-trim data-noescape>
+							var dirname = req.url.replace(/^\/([^\/]*).*$/, '$1'); //get root directory name eg sdk, app, sap
+							if (!routing[dirname]) {
+								console.log(req.method + ': ' + req.url);
+								next();
+								return;
+							}
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Proxy Service Requests</h3>
+					<pre>
+						<code data-trim data-noescape>
+							console.log(req.method + ' (redirect): ' + routing[dirname].target + req.url);
+							proxy.web(req, res, routing[dirname], function (err) {
+								if (err) {
+									next(err);
+								}
+							});
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Proxy NPM dependencies</h3>
+					<pre>
+						<code data-trim data-noescape>
+							npm i -D http-proxy
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Proxy Service Config</h3>
+					odata.json
+					<pre>
+						<code data-trim data-noescape>
+							{
+								"sap": { 
+									"target": "http://localhost:4004",
+									"auth": ""
+								}
+							}
+						</code>
+					</pre>
+				</section>
+			</section>
+			<section>
+				<section data-background-color="#000">
+					<h2 class="ui5con-divider">Build <span class="ui5con-orange">UI5Tooling</span></h2>
+				</section>
+				<section>
+					<h3>Build your app</h3>
+					Build all - for standalone apps
+					<pre>
+						<code data-trim data-noescape>
+							ui5 build -a
+						</code>
+					</pre>
+					Build app only
+					<pre>
+						<code data-trim data-noescape>
+							ui5 build
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Build command</h3>
+					Install rimraf
+					<pre>
+						<code data-trim data-noescape>
+							npm i -D rimraf
+						</code>
+					</pre>
+					Make build command
+					<pre>
+						<code data-trim data-noescape>
+							"build": "rimraf dist && ui5 build"
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Test Build</h3>
+					Install serve & express
+					<pre>
+						<code data-trim data-noescape>
+							npm i -g serve
+							npm i -D express
+						</code>
+					</pre>
+					Add <a href="https://github.com/lemaiwo/UI5ToolsExampleApp/blob/master/proxy.js">proxy</a>
+				</section>
+				<section>
+					<h3>Test Build</h3>
+					Run app in dist folder
+					<pre>
+						<code data-trim data-noescape>
+							serve dist
+						</code>
+					</pre>
+					Run proxy
+					<pre>
+						<code data-trim data-noescape>
+							node proxy.js
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Test Build Script</h3>
+					Install npm-run-all
+					<pre>
+						<code data-trim data-noescape>
+							npm i -D npm-run-all
+						</code>
+					</pre>
+					Scripts
+					<pre>
+						<code data-trim data-noescape>
+							"start": "npm-run-all build --parallel start:dist proxy",
+							"start:dist": "serve dist",
+							"start:dev":"ui5 serve",
+							"proxy": "node proxy.js"
+						</code>
+					</pre>
+				</section>
+			</section>
+
+			<section>
+				<section data-background-color="#000">
+					<h2 class="ui5con-divider">Develop <span class="ui5con-orange">UI5Tooling</span></h2>
+				</section>
+				<section>
+					<h3>Develop with UI5Tooling</h3>
+					<p>Code checks</p>
+					<p>Autocompletion</p>
+					<p>Enable ES6 </p>
+					<p>Enable Async Await</p>
+				</section>
+				<section>
+					<h3>Code checks</h3>
+					Install eslint
+					<pre>
+						<code data-trim data-noescape>
+							npm i -g eslint
+							eslint --init
+						</code>
+					</pre>
+					Eslint scripts
+					<pre>
+						<code data-trim data-noescape>
+							"lint": "eslint webapp"
+						</code>
+					</pre>
+				</section>
+				<section>
+					Config eslint
+					<pre>
+						<code data-trim data-noescape>
+							C:\Users\lemaiwo\Documents\ui5conbe\UI5Con2019>npm run lint:init
+
+							> PersonSkills@0.0.1 lint:init C:\Users\lemaiwo\Documents\ui5conbe\UI5Con2019
+							> eslint --init
+
+							? How would you like to use ESLint? To check syntax and find problems
+							? What type of modules does your project use? JavaScript modules (import/export)
+							? Which framework does your project use? None of these
+							? Does your project use TypeScript? No
+							? Where does your code run? Browser
+							? What format do you want your config file to be in? JSON
+							Successfully created .eslintrc.json file in C:\Users\lemaiwo\Documents\ui5conbe\UI5Con2019
+
+							C:\Users\lemaiwo\Documents\ui5conbe\UI5Con2019>npm run lint
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>SAPUI5 config eslint</h3>
+					<p>Copy config from <a
+							href="https://github.com/lemaiwo/UI5ToolsExampleApp/blob/master/.eslintrc.json">here</a></p>
+				</section>
+				<section>
+					<h3>Autocompletion</h3>
+					<pre>
+						<code data-trim data-noescape>
+							npm install @openui5/ts-types --save-dev
+							
+						</code>
+					</pre>
+					Restart IDE or use this hack
+					<p>///&lt;reference types="@openui5/ts-types" /&gt; #</p>
+				</section>
+				<section>
+					<h3>Autocompletion Example</h3>
+					<pre>
+						<code data-trim data-noescape>
+							/**
+							* @param {typeof sap.m.Button} Button
+							*/
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Enable Next Gen JavaScript</h3>
+					<p>Create build task: lib/task/transpile.js</p>
+					<p>npm install @babel/core --save</p>
+					<pre>
+						<code data-trim data-noescape>
+							const babel = require("@babel/core");
+							module.exports = async function ({
+								workspace,
+								dependencies,
+								options
+							}) {
+								//transpile
+							};
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Enable Next Gen JavaScript</h3>
+					Transpile
+					<pre>
+						<code data-trim data-noescape>
+							const jsResources = await workspace.byGlob("**/*.js");
+						
+							const filteredResources = jsResources.filter(resource => {
+								return (!resource.getPath().includes("/libs/"));
+							});
+							const transformCode = async resource => {
+								var source = await resource.getString();
+								var {code,map,ast} = babel.transformSync(source, {
+									presets: [["@babel/preset-env"]],
+									plugins: [["@babel/plugin-transform-modules-commonjs", {"strictMode": false}]]
+								});
+								resource.setString(code);
+								return resource;
+							};
+							const transformedResources = await Promise.all(filteredResources.map(resource => transformCode(resource)));
+						
+							await Promise.all(transformedResources.map((resource) => {
+								return workspace.write(resource);
+							}));
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Enable Next Gen JavaScript</h3>
+					Enable task
+					<pre>
+						<code data-trim data-noescape>
+							builder:
+								customTasks:
+									- name: transpile
+									afterTask: replaceVersion
+						</code>
+					</pre>
+					<pre>
+						<code data-trim data-noescape>
+							---
+							specVersion: "1.0"
+							kind: extension
+							type: task
+							metadata:
+							name: transpile
+							task:
+							path: lib/task/transpile.js
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Enable Next Gen JavaScript</h3>
+					<pre>
+						<code data-trim data-noescape>
+							npm i -D @babel/core
+							npm i -D @babel/preset-env
+							npm i -D @ui5/fs
+							npm run build
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Enable Next Gen JavaScript</h3>
+					Enable Async Await
+					<pre>
+						<code data-trim data-noescape>
+							npm i -D regenerator-runtime
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Enable Next Gen JavaScript</h3>
+					Enable Async Await
+					<pre>
+						<code data-trim data-noescape>
+							const pathregen = require("regenerator-runtime/path").path;
+							const resourceFactory = require("@ui5/fs").resourceFactory;
+							const fs = require('fs');
+							const path = require("path");
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h3>Enable Next Gen JavaScript</h3>
+					Enable Async Await
+					<pre>
+						<code data-trim data-noescape>
+							const componentResource = jsResources.find((jsResource) => jsResource.getPath().includes("Component.js"));
+							const toPath = componentResource.getPath();
+							const pathPrefix = toPath.replace("Component.js", "");
+							const pathRegenerator = pathregen.substr(pathregen.indexOf("node_modules") + 13).replace("\\", "/");
+							const virtualPathRegenerator = pathPrefix + pathRegenerator;
+							const runtimeCode = fs.readFileSync(pathregen, 'utf8');
+							const runtimeResource = resourceFactory.createResource({
+								path: virtualPathRegenerator,
+								string: runtimeCode
+							});
+
+							await workspace.write(runtimeResource);
+						
+							let componentSource = await componentResource.getString();
+							const requirePath = virtualPathRegenerator.replace("/resources/", "").replace(".js", "");
+							componentSource = "// development mode: load the regenerator runtime synchronously\nif(!window.regeneratorRuntime){sap.ui.requireSync(\"" + requirePath + "\")}" + componentSource;
+							componentResource.setString(componentSource);
+							await workspace.write(componentResource);
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h3>Enable Next Gen JavaScript</h3>
+					Enable Async Await - UI5 config
+					<pre>
+						<code data-trim data-noescape>
+							builder:
+								bundles:
+								- bundleDefinition:
+									name: be/wl/PersonSkills/Component-preload.js
+									defaultFileTypes:
+									- ".js"
+									- ".json"
+									- ".xml"
+									- ".html"
+									- ".library"
+									sections:
+									- mode: raw
+										filters:
+										- be/wl/PersonSkills/regenerator-runtime/runtime.js
+									- mode: preload
+										filters:
+										- be/wl/PersonSkills/manifest.json
+										- be/wl/PersonSkills/controller/**
+										- be/wl/PersonSkills/Component.js
+										- be/wl/PersonSkills/i18n/**
+										- be/wl/PersonSkills/model/**
+										- be/wl/PersonSkills/ui5fixes/**
+										- be/wl/PersonSkills/util/**
+										- be/wl/PersonSkills/view/**
+										- be/wl/PersonSkills/libs/**
+										- be/wl/PersonSkills/test/**
+										- be/wl/PersonSkills/service/**
+										- be/wl/PersonSkills/state/**
+										- be/wl/PersonSkills/localService/**
+										resolve: false
+										sort: true
+										declareModules: false
+									bundleOptions:
+									optimize: true
+									usePredefineCalls: true
+						</code>
+					</pre>
+				</section>
+			</section>
+			<section>
+				<section data-background-color="#000">
+					<h2 class="ui5con-divider">Deploy <span class="ui5con-orange">UI5Tooling</span></h2>
+				</section>
+				<section>
+					<h3>Install nwabap-ui5uploader</h3>
+					<pre>
+					<code data-trim data-noescape>
+						npm i -D nwabap-ui5uploader
+					</code>
+				</pre>
+					<h3>Deploy script</h3>
+					<pre>
+					<code data-trim data-noescape>
+						"deploy": "npx nwabap upload 
+									--base ./dist 
+									--conn_server \"$ABAP_DEVELOPMENT_SERVER_HOST\" 
+									--conn_user \"$ABAP_DEVELOPMENT_USER\" 
+									--conn_password \"$ABAP_DEVELOPMENT_PASSWORD\" 
+									--abap_package \"$ABAP_PACKAGE\" 
+									--abap_bsp \"$ABAP_APPLICATION_NAME\" 
+									--abap_bsp_text \"$ABAP_APPLICATION_DESC\" 
+									--abap_transport \"$CI_COMMIT_TITLE\""
+					</code>
+				</pre>
+				</section>
+				<section>
+					<H3>UI5 Tooling plugin</H3>
+					ui5-task-nwabap-deployer
+				</section>
+			</section>
+			<section>
+				<section data-background-color="#000">
+					<h2 class="ui5con-divider">More <span class="ui5con-orange">UI5Tooling</span></h2>
+				</section>
+				<section>
+					<H3>UI5Tooling Plugin Showcase</H3>
+					<p><a href="https://github.com/petermuessig/ui5-ecosystem-showcase">Example Showcase</a></p>
+					<p><a href="https://www.npmjs.com/search?q=ui5-middleware">Middleware plugins on NPM</a></p>
+					<p><a href="https://www.npmjs.com/search?q=ui5-task">Task plugins on NPM</a></p>
+				</section>
+				<!-- livereload can be added if I have more time left... -->
+			</section>
+
+			<section data-background-color="#000">
+				<h2 class="ui5con-divider">Develop, build & run with <br/><span class="ui5con-orange">UI5Tooling in any IDE</span></h2>
+			</section>
+
+			<section data-background-color="#000">
+				<div class="ui5con-thankyou ui5con-orange">Thank you.</div>
+				<div class="ui5con-logo"></div>
+				<div class="ui5con-speakerdetails">
+					Contact information:<br><br>
+					Wouter Lemaire<br>
+					
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			slideNumber: true,
+			hash: true,
+			history: true,
+			width: 1920,
+			height: 1080,
+			center: true, // when changing to "false", add the CSS class "ui5con-aligntop" (and optionally ui5con-alignleft") to the body tag in the HTML
+			transition: 'convex',         // none/fade/slide/convex/concave/zoom
+			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+		Reveal.addEventListener('slidechanged', function (event) {
+			const sBlack = "#000";
+			if ($(".present").attr("data-background-color") === sBlack) {
+				$(".flexso").addClass("flexso_white");
+			} else {
+				$(".flexso").removeClass("flexso_white");
+			}
+		});
+	</script>
+</body>
+
+</html>
